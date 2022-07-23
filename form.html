@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+  <header class="page-header">
+    <nav class="page-header__menu">
+      <ul class="main-menu">
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="index.html">Главная</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="photo.html">Фото и видео</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link main-menu__link__active" href="#">Форма отзыва</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
+        </li>
+      </ul>
+      <div class="menu-action">
+        <!--main-menu__action  main-menu__logo  main-menu__icon-->
+        <a class="menu-action__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="menu-action__icon" src="img/logo-sedona-mobile.svg" width="102" height="85" alt="Логотип Седоны">
+          </picture>
+        </a>
+        <button class="menu-action__button-toggle menu-action__button-toggle--toggle-modif" type="button" aria-label="Кнопка закрытия или открытия меню"></button>
+      </div>
+    </nav>
+  </header>
+
+  <section class="sedona-bglogo sedona-bglogo--modif">
+  </section>
+
+  <section class="feedback feedback--modif">
+    <h3 class="feedback__title">Оставьте свой отзыв</h3>
+    <p class="feedback__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
+      достопримечательностях</p>
+  </section>
+  <form class="feedback-form feedback-form--modif" action="https://echo.htmlacademy.ru" method="post">
+    <fieldset class="represent represent--modif">
+      <h4 class="represent__title">Представьтесь:</h4>
+      <div class="represent__info represent__info--modif">
+        <label class="represent__text" for="name">имя*:</label>
+        <input class="represent__value" id="name" type="text" name="user-name" placeholder="Петр">
+      </div>
+      <div class="represent__info represent__info--modif">
+        <label class="represent__text" for="surname">Фамилия*:</label>
+        <input class="represent__value" id="surname" type="text" name="user-surname" placeholder="Иванов">
+      </div>
+      <div class="represent__info represent__info--modif">
+        <label class="represent__text" for="patronymic">Отчество:</label>
+        <input class="represent__value" id="patronymic" type="text" name="user-patronymic" placeholder="Александрович">
+      </div>
+    </fieldset>
+
+    <fieldset class="contacts contacts--modif">
+      <h4 class="contacts__title">Контактная информация:</h4>
+      <div class="contacts__info contacts__info--modif contacts__info--phone">
+        <label class="contacts__text" for="mobile"><span class="contacts__hidden">Контактный</span> телефон*:</label>
+        <input class="contacts__value" id="mobile" type="tel" name="user-mobile" placeholder="Введите телефон" pattern="2-[0-9]{3}-[0-9]{3}" title="Введите телефон в формате 2-xxx-xxx, где вместо x
+        должна быть цифра:">
+        <span class="contacts__icon contacts__icon--phone"></span>
+      </div>
+      <div class="contacts__info contacts__info--modif">
+        <label class="contacts__text" for="email">Электронная почта*:</label>
+        <input class="contacts__value" id="email" type="email" name="user-email" placeholder="Введите e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+        <span class="contacts__icon contacts__icon--email"></span>
+      </div>
+    </fieldset>
+
+    <fieldset class="user-impr user-impr--modif">
+      <h4 class="user-impr__title">Ваше общее впечатление:</h4>
+      <div class="user-impr__variable">
+        <input class="user-impr__button" type="radio" name="impr" value="Good" id="good-impr" checked="">
+        <label class="user-impr__radio user-impr__radio--modif" for="good-impr" tabindex="0">Скорее положительное</label>
+      </div>
+      <div class="user-impr__variable">
+        <input class="user-impr__button" type="radio" name="impr" value="Bad" id="bad-impr">
+        <label class="user-impr__radio user-impr__radio--modif" for="bad-impr" tabindex="0">Скорее отрицательное</label>
+      </div>
+      <div class="user-impr__variable">
+        <input class="user-impr__button" type="radio" name="impr" value="idk" id="idk-impr">
+        <label class="user-impr__radio user-impr__radio--modif" for="idk-impr" tabindex="0">Затрудняюсь ответить</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="user-visit user-visit--modif">
+      <h4 class="user-visit__title">Посещенные достопримечательности:</h4>
+        <ul class="user-visit__form user-visit__form--modif">
+          <li class="user-visit__block user-visit__block--modif" tabindex="0">
+            <input class="user-visit__button" type="checkbox" name="places" id="bridge" value="bridge" checked="">
+            <label class="user-visit__check user-visit__check--modif" for="bridge">Мост Дьявола</label>
+          </li>
+          <li class="user-visit__block user-visit__block--modif" tabindex="0">
+            <input class="user-visit__button" type="checkbox" name="places" id="mount" value="mount" checked="">
+            <label class="user-visit__check user-visit__check--modif" for="mount">Гора-Колокол</label>
+          </li>
+          <li class="user-visit__block user-visit__block--modif" tabindex="0">
+            <input class="user-visit__button" type="checkbox" name="places" id="park" value="park" checked="">
+            <label class="user-visit__check user-visit__check--modif" for="park">Слайд-парк</label>
+          </li>
+          <li class="user-visit__block user-visit__block--modif" tabindex="0">
+            <input class="user-visit__button" type="checkbox" name="places" id="cliffs" value="cliffs">
+            <label class="user-visit__check user-visit__check--modif" for="cliffs">Красные скалы</label>
+          </li>
+        </ul>
+    </fieldset>
+    <fieldset class="user-opinion user-opinion--modif">
+      <h4 class="user-opinion__title">Опишите свои эмоции:</h4>
+      <textarea class="user-opinion__text" placeholder="Опишите подробно все свои восторги" name="opinion"></textarea>
+      <button class="user-opinion__button" type="submit">Отправить отзыв</button>
+      <span class="user-opinion__req-fields user-opinion__req-fields--modif">* - обязательные поля</span>
+    </fieldset>
+
+    <section class="fail-popup fail-popup--modif">
+      <h4 class="fail-popup__title">Что-то пошло не так!</h4>
+      <p class="fail-popup__text fail-popup__text--modif">Проверьте поля, выделенные красным, скорее всего вы забыли их
+        заполнить</p>
+      <button class="fail-popup__button">ок</button>
+    </section>
+
+    <section class="success-popup success-popup--modif">
+      <div class="success-popup__info">
+        <h4 class="success-popup__title">Ваш отзыв отправлен!</h4>
+        <p class="success-popup__text success-popup__text--modif">Спасибо за ваше участие, ваш отзыв уже поступил к
+          нам, в ближайшее время мы
+          опубликуем его на сайте</p>
+      </div>
+
+      <div class="success-popup__block">
+        <button class="success-popup__button">Закрыть окно</button>
+      </div>
+    </section>
+
+  </form>
+  <footer class="page-footer page-footer--modif">
+    <span class="page-footer__hash">#Visitsedona</span>
+    <section class="social social--modif">
+      <div class="social__item">
+        <a class="social__item__link" href="#" aria-label="Ссылка на твиттер">
+          <svg class="socials__item__icon" width="17.5px" height="14.663px">
+            <use xlink:href="img/sprite.svg#twitter-icon"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="social__item">
+        <a class="social__item__link" href="#" aria-label="Ссылка на фейсбук">
+          <svg class="socials__item__icon" width="8.672px" height="18.944px">
+            <use xlink:href="img/sprite.svg#facebook-icon"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="social__item">
+        <a class="social__item__link" href="#" aria-label="Ссылка на ютуб">
+          <svg class="socials__item__icon" width="19.979px" height="14.015px">
+            <use xlink:href="img/sprite.svg#youtube-icon"></use>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <p class="page-footer__creater">Разработано
+      <a class="page-footer__creater__icon" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на страницы html academy">
+        <svg class="page-footer__creater__logo" width="26.943px" height="34.09px">
+          <use xlink:href="img/sprite.svg#academy-icon"></use>
+        </svg>
+      </a>
+    </p>
+  </footer>
+</body>
+
+</html>
