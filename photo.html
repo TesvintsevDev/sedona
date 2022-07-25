@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+  <header class="page-header">
+    <nav class="page-header__menu">
+      <ul class="main-menu">
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="index.html">Главная</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link main-menu__link__active" href="#">Фото и видео</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="form.html">Форма отзыва</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
+        </li>
+      </ul>
+      <div class="menu-action">
+        <a class="menu-action__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="menu-action__icon" src="img/logo-sedona-mobile.svg" width="102" height="85" alt="Логотип Седоны">
+          </picture>
+        </a>
+        <button class="menu-action__button-toggle menu-action__button-toggle--toggle-modif" type="button" aria-label="Кнопка закрытия или открытия меню"></button>
+      </div>
+    </nav>
+  </header>
+
+  <section class="sedona-bglogo sedona-bglogo--modif">
+  </section>
+
+  <section class="photo-info photo-info--modif">
+    <h1 class="photo-info__title">фото и видео</h1>
+    <p class="photo-info__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике
+      и экономике.</p>
+  </section>
+
+  <section class="card-list card-list--modif">
+    <div class="card-item card-item--modif card-item--first-item">
+      <a href="#">
+        <picture class="card-item__image-block  card-item__image-block--first-item">
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
+
+          <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+          <img class="card-item__image" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@1x.jpg 1x, img/photo-sunset-mobile@2x.jpg 2x" alt="Рассвет в Седоне">
+        </picture>
+      </a>
+      <div class="card-item__info card-item__info--modif">
+        <p class="card-item__name">Неродные просторы</p>
+        <span class="card-item__autor">Автор фото: Борис</span>
+        <span class="card-item__count-like">1350
+          <button class="card-item__button-like" aria-label="Кнопка лайка изображения">
+            <svg width="22px" height="20px">
+              <use xlink:href="img/sprite.svg#photo-like"></use>
+            </svg>
+          </button>
+        </span>
+      </div>
+    </div>
+
+    <div class="card-item card-item--modif">
+      <a href="#">
+        <picture class="card-item__image-block">
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp 1x, img/photo-cactus-mobile@2x.webp 2x">
+
+          <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+          <img class="card-item__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@1x.jpg 1x, img/photo-cactus-mobile@2x.jpg 2x" alt="Кактус">
+        </picture>
+      </a>
+      <div class="card-item__info card-item__info--modif">
+        <p class="card-item__name">Местная растительность</p>
+        <span class="card-item__autor">Автор фото: Сергей</span>
+        <span class="card-item__count-like">143
+          <button class="card-item__button-like" aria-label="Кнопка лайка изображения">
+            <svg width="22px" height="20px">
+              <use xlink:href="img/sprite.svg#photo-like"></use>
+            </svg>
+          </button>
+        </span>
+      </div>
+    </div>
+
+    <div class="card-item card-item--modif">
+      <a href="#">
+        <picture class="card-item__image-block">
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp 1x, img/photo-roads-mobile@2x.webp 2x">
+
+          <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+          <img class="card-item__image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@1x.jpg 1x, img/photo-roads-mobile@2x.jpg 2x" alt="Дорога">
+        </picture>
+      </a>
+      <div class="card-item__info card-item__info--modif card-item__info--active">
+        <p class="card-item__name">Дорога на север</p>
+        <span class="card-item__autor">Автор фото: Петр</span>
+        <span class="card-item__count-like">96
+          <button class="card-item__button-like" aria-label="Кнопка лайка изображения">
+            <svg width="22px" height="20px">
+              <use xlink:href="img/sprite.svg#photo-like"></use>
+            </svg>
+          </button>
+        </span>
+      </div>
+    </div>
+
+    <div class="card-item card-item--modif">
+      <a href="#">
+        <picture class="card-item__image-block">
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
+
+          <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+          <img class="card-item__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@1x.jpg 1x, img/photo-bridge-mobile@2x.jpg 2x" alt="Мост">
+        </picture>
+      </a>
+      <div class="card-item__info card-item__info--modif">
+        <p class="card-item__name">Мост дьявола</p>
+        <span class="card-item__autor">Автор фото: Антон</span>
+        <span class="card-item__count-like">254
+          <button class="card-item__button-like" aria-label="Кнопка лайка изображения">
+            <svg width="22px" height="20px">
+              <use xlink:href="img/sprite.svg#photo-like"></use>
+            </svg>
+          </button>
+        </span>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="video-presentation video-presentation--modif">
+    <div class="video-presentation__descr video-presentation__descr--modif">
+      <h4 class="video-presentation__descr__title">Все еще сомневаетесь?</h4>
+      <p class="video-presentation__descr__text">смотрите видеопрезентацию и скорее за билетами, пока они не подорожали
+        в очередной раз!</p>
+    </div>
+    <div class="video-presentation__container">
+      <picture class="video-presentation__container__image">
+        <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+        <img class="video-presentation__window" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@1x.jpg 1x, img/video-mobile@2x.jpg 2x" alt="Мост">
+      </picture>
+    </div>
+    <div class="video-presentation__control">
+      <div class="video-presentation__control__toogler" aria-label="Ползунок видео">
+        <span class="video-presentation__control__toogler__slider"></span>
+        <span class="video-presentation__control__toogler__progress"></span>
+
+      </div>
+      <button class="video-presentation__control__replay" aria-label="КНопка повтора видео">
+        <svg width="16px" height="20px">
+          <use xlink:href="img/sprite.svg#replay-video"></use>
+        </svg>
+      </button>
+      <button class="video-presentation__control__cc" aria-label="Кнопка включения субтитров">
+        <svg width="32px" height="20px">
+          <use xlink:href="img/sprite.svg#cc-video"></use>
+        </svg>
+      </button>
+      <button class="video-presentation__control__fullscreen" aria-label="Кнопка полнометражного режима для видео">
+        <svg width="20px" height="20px">
+          <use xlink:href="img/sprite.svg#fullscreen-video"></use>
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <footer class="page-footer page-footer--modif">
+    <span class="page-footer__hash">#Visitsedona</span>
+    <section class="social social--modif">
+      <div class="social__item">
+        <a class="social__item__link" href="#" aria-label="Ссылка на твиттер">
+          <svg class="socials__item__icon" width="17.5px" height="14.663px">
+            <use xlink:href="img/sprite.svg#twitter-icon"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="social__item">
+        <a class="social__item__link" href="#" aria-label="Ссылка на фейсбук">
+          <svg class="socials__item__icon" width="8.672px" height="18.944px">
+            <use xlink:href="img/sprite.svg#facebook-icon"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="social__item">
+        <a class="social__item__link" href="#" aria-label="Ссылка на ютуб">
+          <svg class="socials__item__icon" width="19.979px" height="14.015px">
+            <use xlink:href="img/sprite.svg#youtube-icon"></use>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <p class="page-footer__creater">Разработано
+      <a class="page-footer__creater__icon" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на страницы html academy">
+        <svg class="page-footer__creater__logo" width="26.943px" height="34.09px">
+          <use xlink:href="img/sprite.svg#academy-icon"></use>
+        </svg>
+      </a>
+    </p>
+  </footer>
+</body>
+</html>
