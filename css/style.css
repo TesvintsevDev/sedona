@@ -1717,58 +1717,8 @@ img {
   }
 }
 
-/*
-.socials {
-  width: 151px; // 46 48
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+/* feedback */
 
-  &--modif {
-    margin-bottom: 33px;
-  }
-}
-
-.socials__item__icon {
-  fill: #ffffff;
-}
-
-.socials__item {
-  width: 46px;
-  height: 48px;
-  background-color: $main-color;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-@media (min-width: $tablet-width) {
-  .socials {
-    min-width: 256px;
-    min-height: 120px;
-    justify-content: center;
-    align-items: center;
-
-    &--modif {
-      margin-bottom: 0;
-    }
-  }
-
-  .socials__item {
-    &:nth-child(2) {
-      margin: 0 5px;
-    }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .socials {
-    min-width: 400px;
-  }
-}
-
-*/
 .feedback {
   min-width: 320px;
   text-align: center;
